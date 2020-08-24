@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 
-import AsyncSelect from 'react-select/async';
+import AsyncSelect from './Async';
 // import { colourOptions } from '../data';
 
 const colourOptions = [
@@ -40,6 +40,7 @@ export default class WithCallbacks extends Component<*, State> {
           loadOptions={loadOptions}
           defaultOptions
           onInputChange={() => this.handleInputChange('green')}
+          isLoading
         />
       </div>
     );
